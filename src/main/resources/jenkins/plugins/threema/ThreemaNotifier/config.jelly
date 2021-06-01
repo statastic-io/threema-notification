@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout"
+         xmlns:t="/lib/hudson" xmlns:f="/lib/form" xmlns:c="/lib/credentials">
+
+    <f:entry title="Notify Build Start">
+        <f:checkbox field="startNotification" />
+    </f:entry>
+
+    <f:entry title="Notify Aborted">
+        <f:checkbox field="notifyAborted" />
+    </f:entry>
+
+    <f:entry title="Notify Failure">
+        <f:checkbox field="notifyFailure" />
+    </f:entry>
+
+    <f:entry title="Notify Not Built">
+        <f:checkbox field="notifyNotBuilt" />
+    </f:entry>
+
+    <f:entry title="Notify Success">
+        <f:checkbox field="notifySuccess" />
+    </f:entry>
+
+    <f:entry title="Notify Unstable">
+        <f:checkbox field="notifyUnstable" />
+    </f:entry>
+
+    <f:entry title="Notify Back To Normal">
+        <f:checkbox field="notifyBackToNormal" />
+    </f:entry>
+
+    <f:entry title="Notify Repeated Failure">
+        <f:checkbox field="notifyRepeatedFailure" />
+    </f:entry>
+
+    <f:entry field="recipient" title="Recipient Specifier">
+        <f:textbox/>
+    </f:entry>
+
+    <f:entry field="credentialsId" title="Secret">
+        <c:select/>
+    </f:entry>
+</j:jelly>

@@ -1,0 +1,13 @@
+target
+.classpath
+.idea
+*.iml
+.project
+.settings
+bin
+work
+.gradle
+/build/
+gradle-app.setting
+!gradle-wrapper.jar
+.gradletasknamecache
